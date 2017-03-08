@@ -12,5 +12,8 @@ homepage = "https://tokio.rs"
 repository = "https://github.com/tokio-rs/tokio-service"
 readme = "README.md"
 
-[dependencies]
-futures = "0.1"
+[dependencies.futures]
+git = "https://github.com/alexcrichton/futures-rs"
+branch = "close"
+default-features = false
+features = ["use_std"]
